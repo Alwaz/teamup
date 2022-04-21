@@ -1,7 +1,32 @@
 import React from "react";
-
+import Button from "../../../Components/Button/Button";
+import "./login.scss";
 const Login = () => {
-  return <div>Login</div>;
+  return (
+    <div className="login___container">
+      <div className="top">
+        <h1 className="title">Login</h1>
+        <p className="para">Welcome back 👋 Login to collaborate</p>
+      </div>
+
+      <div className="form__container">
+        <label htmlFor="email">Email*</label>
+        <input type="email" />
+
+        <label htmlFor="password">Password*</label>
+        <input type="password" />
+        <a href="#">Forgot Password?</a>
+
+        <Button />
+        <p className="account__return__detail">
+          Not regestered yet?
+          <span>
+            <a href="#">Create an account</a>
+          </span>
+        </p>
+      </div>
+    </div>
+  );
 };
 
 export default Login;
