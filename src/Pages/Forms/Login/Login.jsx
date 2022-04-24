@@ -1,6 +1,6 @@
 import React from "react";
 import Button from "../../../Components/Button/Button";
-import "./login.scss";
+import "./Login.scss";
 const Login = () => {
   return (
     <div className="login___container">
@@ -17,7 +17,7 @@ const Login = () => {
         <input type="password" />
         <a href="#">Forgot Password?</a>
 
-        <Button />
+        <Button buttonValue={'Login'} />
         <p className="account__return__detail">
           Not regestered yet?
           <span>

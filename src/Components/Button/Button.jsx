@@ -1,10 +1,10 @@
 import React from "react";
 import "./button.scss";
 
-const Button = () => {
+const Button = ({buttonValue}) => {
   return (
     <div>
-      <input className="btn" type="submit" value="Login" />
+      <input className="btn" type="submit" value={buttonValue} />
     </div>
   );
 };
